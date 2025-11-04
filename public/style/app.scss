@@ -1,0 +1,11 @@
+@import './variaveis';
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1280px; 
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  color: var(--branco); 
+  background-color: var(--azul-escuro);
+}
