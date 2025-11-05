@@ -3,18 +3,17 @@ import "/public/style/integrante.scss";
 import linkedin from "/public/icons/linkedin.svg";
 import instagram from "/public/icons/instagram.svg";
 import github from "/public/icons/github.svg";
-import img from "/public/imgs/image.png";
 
 function Integrante() {
   return (
-    <section id="sobre" className="team">
+    <section id="sobre">
       <h2 className="team_title">SOBRE NÓS</h2>
 
       <ul className="team-flex">
         {team.map((m) => (
           <li key={m.id} className="member">
             <div className="member_foto">
-              <img src={img} alt={`Foto de ${m.nome}`} />
+              <img src={m.foto} alt={`Foto de ${m.nome}`} />
             </div>
 
             <h3 className="member_name">

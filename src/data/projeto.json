@@ -1,0 +1,64 @@
+[
+  {
+    "id": "peca-certa",
+    "title": "PEÇA CERTA",
+    "alt": "Thumbnail do projeto Peça Certa",
+    "foto": "/public/imgs/ancora.svg",
+    "desc": "Marketplace inteligente para autopeças, com busca por compatibilidade, catálogo unificado e checkout seguro. O back-end expõe APIs de catálogo, carrinho e pagamento; no front-end, a UI prioriza velocidade e clareza para oficinas e consumidores.",
+    "links": {
+      "demo": "https://algo-front-kohl.vercel.app/",
+      "demo_img": "/public/imgs/ancora.svg",
+      "github": "https://github.com/Gustavo-b017/algo-front",
+      "github_img": "/public/icons/github.svg"
+    }
+  },
+  {
+    "id": "BlueVision",
+    "title": "Blue Vision",
+    "alt": "Logotipo da Blue Vision",
+    "foto": "/public/imgs/blueVision.svg",
+    "desc": "",
+    "links": {
+      "demo": "https://global-o20-2024.vercel.app/",
+      "demo_img": "/public/imgs/blueVision.svg",
+      "github": "https://github.com/Gustavo-b017/GS-O20",
+      "github_img": "/public/icons/github.svg"
+    }
+  },
+  {
+    "id": "Sijia",
+    "title": "SIJIA",
+    "alt": "Logotipo da Sijia",
+    "foto": "/public/imgs/sijia.png",
+    "desc": "",
+    "links": {
+      "demo": "https://sijia-two.vercel.app/",
+      "demo_img": "/public/imgs/sijia.png",
+      "github": "https://github.com/Gustavo-b017/challenger-SijiA",
+      "github_img": "/public/icons/github.svg"
+    }
+  },
+  {
+    "id": "vetrasys",
+    "title": "VETRASYS",
+    "alt": "Thumbnail do projeto Vetrasys",
+    "desc": "EcoEstação é um projeto de modelagem 3D e simulação em AR/VR que propõe uma estação de metrô sustentável. O modelo combina painéis solares, turbinas eólicas verticais e piso piezoelétrico para gerar energia limpa. Criado com técnicas poligonais avançadas, une inovação, design e consciência ambiental, demonstrando o potencial das energias renováveis nos centros urbanos.",
+    "foto": "/public/imgs/tekoa.svg",
+    "links": {
+      "demo": "",
+      "github": ""
+    }
+  },
+  {
+    "id": "tekoa",
+    "title": "TEKOÁ",
+    "alt": "Logotipo do TEKOÁ",
+    "foto": "/public/imgs/tekoa.svg",
+    "desc": "O Tekoá é uma plataforma digital que integra tecnologia e preservação ambiental. Desenvolvida para otimizar o resgate e reabilitação de animais afetados por queimadas, conecta voluntários, brigadistas e centros de atendimento. Com API em Java, algoritmos em Python e banco Oracle, o sistema prioriza ocorrências, traça rotas e garante eficiência no cuidado e reintrodução da fauna silvestre.",
+    "links": {
+      "demo": "",
+      "github": "https://github.com/Gustavo-b017",
+      "github_img": "/public/icons/github.svg"
+    }
+  }  
+]
