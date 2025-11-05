@@ -1,6 +1,15 @@
 import projects from "../data/projeto.json";
 import "/public/style/projeto.scss";
 
+/* 🔧 mesmo helper */
+const fix = (p = "") => {
+  if (!p) return p;
+  if (/^https?:\/\//i.test(p)) return p;
+  let out = p.replace(/^\/?public\//i, "/");
+  if (!out.startsWith("/")) out = "/" + out;
+  return out;
+};
+
 function Projeto() {
   return (
     <section id="projetos">
@@ -10,7 +19,8 @@ function Projeto() {
         {projects.map((p) => (
           <li key={p.id} className="proj">
             <div className="proj_foto">
-              <img src={p.foto} alt={p.alt} />
+              {/* ⬇️ normaliza a imagem do card */}
+              <img src={fix(p.foto)} alt={p.alt} loading="lazy" />
             </div>
 
             <h3 className="proj_name">{p.title}</h3>
@@ -19,14 +29,16 @@ function Projeto() {
 
             <div className="proj_socials" aria-label={`Redes de ${p.nome}`}>
               {p.links?.demo && (
-                <a href={p.links.demo} aria-label="Demo">
-                  <img src={p.links.demo_img} alt="Demo" />
+                <a href={p.links.demo} aria-label="Demo" target="_blank" rel="noopener noreferrer">
+                  {/* ⬇️ normaliza o ícone da demo, caso venha do JSON */}
+                  <img src={fix(p.links.demo_img)} alt="Demo" />
                 </a>
               )}
               
               {p.links?.github && (
-                <a href={p.links.github} aria-label="GitHub">
-                  <img src={p.links.github_img} alt="GitHub" />
+                <a href={p.links.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  {/* ⬇️ normaliza o ícone do GitHub, caso venha do JSON */}
+                  <img src={fix(p.links.github_img)} alt="GitHub" />
                 </a>
               )}
             </div>

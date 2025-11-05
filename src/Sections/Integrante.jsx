@@ -4,6 +4,15 @@ import linkedin from "/public/icons/linkedin.svg";
 import instagram from "/public/icons/instagram.svg";
 import github from "/public/icons/github.svg";
 
+/* 🔧 helper para remover o prefixo /public e garantir a barra inicial */
+const fix = (p = "") => {
+  if (!p) return p;
+  if (/^https?:\/\//i.test(p)) return p;                  // URLs externas ok
+  let out = p.replace(/^\/?public\//i, "/");              // tira "/public"
+  if (!out.startsWith("/")) out = "/" + out;              // garante "/"
+  return out;
+};
+
 function Integrante() {
   return (
     <section id="sobre">
@@ -13,7 +22,8 @@ function Integrante() {
         {team.map((m) => (
           <li key={m.id} className="member">
             <div className="member_foto">
-              <img src={m.foto} alt={`Foto de ${m.nome}`} />
+              {/* ⬇️ apenas troque o src para passar pelo helper */}
+              <img src={fix(m.foto)} alt={`Foto de ${m.nome}`} loading="lazy" />
             </div>
 
             <h3 className="member_name">
@@ -26,19 +36,19 @@ function Integrante() {
 
             <div className="member_socials" aria-label={`Redes de ${m.nome}`}>
               {m.socials?.linkedin && (
-                <a href={m.socials.linkedin} aria-label="LinkedIn">
+                <a href={m.socials.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} alt="LinkedIn" />
                 </a>
               )}
 
               {m.socials?.instagram && (
-                <a href={m.socials.instagram} aria-label="Instagram">
+                <a href={m.socials.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                   <img src={instagram} alt="Instagram" />
                 </a>
               )}
 
               {m.socials?.github && (
-                <a href={m.socials.github} aria-label="GitHub">
+                <a href={m.socials.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                   <img src={github} alt="GitHub" />
                 </a>
               )}
