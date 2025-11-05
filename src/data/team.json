@@ -4,7 +4,6 @@
     "nome": "Gustavo",
     "func": "Back-end",
     "bio": "Apaixonado por lógica e estrutura, Gustavo dá base ao funcionomento de cada projeto. Seu foco está no back-end, garantindo que tudo rode com eficiência e estabilidade.",
-    "foto": "/public/imgs/image.png",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/gustavo-assum%C3%A7%C3%A3o-829202289/",
       "instagram": "",
@@ -16,7 +15,6 @@
     "nome": "Gilson",
     "func": "Front-end",
     "bio": "Gilson transforma ideias em interfaces vivas. Com atenção ao detalhe e à experiência do usuário, é ele quem conecta o visual ao código, tornando cada interação fluida e intuitiva.",
-    "foto": "/public/imgs/image.png",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/gilson-dias-jn/",
       "instagram": "",
@@ -28,7 +26,6 @@
     "nome": "Gabriel",
     "func": "Design",
     "bio": "Criativo por essência, Gabriel é responsável pelo design e pela identidade visual do grupo. Une estética e propósito para dar forma àquilo que a equipe imagina e constrói.",
-    "foto": "/public/imgs/image.png",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/gabrieldemendonca/",
       "instagram": "",
