@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 16px;
+  padding: var(--alinhar-section);
 }
 
 /* Marca (logo + opcional texto) */
@@ -22,7 +22,6 @@
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  color: var(--nav-fg);
   text-decoration: none;
   
   .brand__logo { 
