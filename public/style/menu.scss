@@ -3,6 +3,7 @@
 /* Header ocupa a página inteira horizontalmente */
 .site-header {
   width: 100%;
+  background-color: var(--azul-escuro);
   position: sticky; 
   top: 0;
   z-index: 1000;

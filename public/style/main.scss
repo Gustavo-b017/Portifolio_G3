@@ -6,11 +6,12 @@
   padding: var(--alinhar-section);
   overflow: hidden;
   min-height: 500px;
+  margin-top: 40px;
 }
 
 .cubo_text {
   .cubo_title  {
-    font-size: var(--titulo);
+    font-size: 3.4rem;
     font-weight: 700;
     gap: 10px;
 
@@ -31,14 +32,16 @@
   .cubo_lead {
     font-size: var(--texto);
     margin: 20px 0;
+    width: 75%;
     max-width: 600px;
     line-height: 1.4;
+    margin-top: 70px;
   }
 }
 
 .cubo_art {
   position: absolute;
-  transform: translate(55%, -90%);
+  transform: translate(55%, -120%);
   z-index: -1;
 
   img {

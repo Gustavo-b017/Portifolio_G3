@@ -62,3 +62,19 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .proj-flex{
+
+    .proj {
+      .proj_name {
+        font-size: 1.5rem;
+      }
+    
+      .proj_bio {
+        font-size: 1rem;
+      }
+    }
+  }
+}

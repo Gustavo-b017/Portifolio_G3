@@ -7,9 +7,9 @@ import github from "/public/icons/github.svg";
 /* 🔧 helper para remover o prefixo /public e garantir a barra inicial */
 const fix = (p = "") => {
   if (!p) return p;
-  if (/^https?:\/\//i.test(p)) return p;                  // URLs externas ok
-  let out = p.replace(/^\/?public\//i, "/");              // tira "/public"
-  if (!out.startsWith("/")) out = "/" + out;              // garante "/"
+  if (/^https?:\/\//i.test(p)) return p;               
+  let out = p.replace(/^\/?public\//i, "/");              
+  if (!out.startsWith("/")) out = "/" + out;              
   return out;
 };
 
@@ -22,7 +22,6 @@ function Integrante() {
         {team.map((m) => (
           <li key={m.id} className="member">
             <div className="member_foto">
-              {/* ⬇️ apenas troque o src para passar pelo helper */}
               <img src={fix(m.foto)} alt={`Foto de ${m.nome}`} loading="lazy" />
             </div>
 
