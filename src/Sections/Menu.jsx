@@ -18,7 +18,6 @@ function Menu() {
         {/* LOGO (esquerda) */}
         <a href="/" className="brand" aria-label="Página inicial">
           <img src={logo} alt="Logo" className="brand__logo" />
-          <span className="brand__name"> G³ </span> 
         </a>
 
         <div className="nav-spacer" />
