@@ -1,25 +1,25 @@
 @import './variaveis.scss';
 
 #sobre {
-  padding: 150px 0;
+  padding: 70px 0 150px 0;
 }
 
 
-.team_title{
+.team_title {
   text-align: center;
-  margin: 40px 0 100px 0 ;
+  margin: 40px 0 100px 0;
   font-size: var(--titulo);
   color: var(--laranja);
 }
 
-.team-flex{
+.team-flex {
   display: flex;
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
   max-width: 100vw;
   gap: 20px;
-  
+
   .member {
     display: flex;
     align-items: center;
@@ -28,28 +28,30 @@
     max-width: 400px;
     width: 30%;
     min-width: 300px;
-    
+
     .member_foto {
       margin: 0 auto;
-      
+
       img {
-        width: 250px;
-        height: 250px;
+        width: 240px;
+        height: 240px;
         border-radius: 100%;
         margin: 0 auto;
         object-fit: cover;
       }
+
     }
-    
+
     .member_name {
       font-size: 1.7rem;
       margin: 15px 0;
       color: var(--laranja);
     }
-    
+
     .member_bio {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: var(--texto);
+      font-weight: 100;
       padding: 0 10px;
       letter-spacing: 1.2px;
       line-height: 25px;
@@ -57,24 +59,89 @@
 
     .member_socials {
       display: flex;
-      // width: 90%;
       gap: 20px;
       margin: 20px auto;
+
+      a {
+        transition: all 0.3s ease-in-out;
+
+        img {
+          border-radius: 10px;
+          width: 35px;
+          height: auto;
+        }
+
+        &:hover img {
+          transform: scale(1.05);
+          box-shadow: 0 0 20px 5px rgba(255, 112, 67, 0.3);
+        }
+      }
+
     }
+
+
   }
 }
 
 @media (max-width: 768px) {
-  .team-flex{
+
+  @keyframes fade-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #sobre {
+    padding: 70px 0 70px 0;
+  }
+
+
+  .team_title {
+    text-align: center;
+    margin: 0px 0px 60px 0;
+    font-size: var(--titulo-mob);
+    color: var(--laranja);
+
+    opacity: 0;
+    animation: fade-slide-up 0.8s ease-out 0.2s forwards;
+  }
+
+  .team-flex {
+    gap: 50px;
 
     .member {
+      width: 90%;
+
+      .member_foto img {
+        width: 160px;
+        height: 160px;
+      }
+
       .member_name {
-        font-size: 1.5rem;
+        font-size: var(--titulo-member);
+        margin: 15px 0;
       }
-    
+
       .member_bio {
-        font-size: 1rem;
+        padding: 0;
+        letter-spacing: 1px;
       }
+
+      .member_socials {
+        gap: 10px;
+
+        a img {
+          border-radius: 8px;
+          width: 30px;
+        }
+      }
+
     }
   }
 }
