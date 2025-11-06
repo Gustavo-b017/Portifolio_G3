@@ -3,6 +3,7 @@ import Integrante from "./Sections/Integrante"
 import Main from "./Sections/Main"
 import Menu from "./Sections/Menu"
 import Projeto from "./Sections/Projeto"
+import Footer from "./Sections/Footer"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Main />
       <Integrante />
       <Projeto />
+      <Footer />
       </body>
   )
 }

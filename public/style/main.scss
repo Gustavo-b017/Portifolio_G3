@@ -10,6 +10,10 @@
   }
 }
 
+#inicio {
+  padding-top: 85px;
+}
+
 .cubo {
   position: relative;
   max-width: 100vw;
@@ -65,14 +69,16 @@
 }
 
 @media (min-width: 700px) {
+
+  #inicio {
+    padding: 0px 0 60px 0;
+  }
+
   .cubo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    height: 90vh;
-    min-height: 0; 
-    margin-top: 0;  
   }
 
   .cubo_text {

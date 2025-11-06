@@ -4,7 +4,7 @@
     "title": "Peça Certa",
     "alt": "Thumbnail do projeto Peça Certa",
     "foto": "/public/imgs/banner_ancora.png",
-    "desc": "Marketplace inteligente para autopeças, com busca por compatibilidade, catálogo unificado e checkout seguro. O back-end expõe APIs de catálogo, carrinho e pagamento; no front-end, a UI prioriza velocidade e clareza para oficinas e consumidores.",
+    "desc": "O 'Peça Certa' é uma plataforma de e-commerce de autopeças focada no consumidor final, desenvolvida pela G³ em parceria com a FIAP e a Rede Ancora. A plataforma simplifica a compra de peças online através de uma busca inteligente por produto ou placa, avaliações visuais com estrelas e um fluxo de 'compra rápida'. Para a Rede Ancora, o projeto expande seu alcance digital e fortalece a fidelização de clientes.",
     "links": {
       "demo": "https://algo-front-kohl.vercel.app/",
       "demo_img": "/public/imgs/ancora.svg",

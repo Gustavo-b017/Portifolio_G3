@@ -34,7 +34,7 @@ function Menu() {
         </button>
 
         <ul className={`nav-links ${open ? "is-open" : ""}`}>
-          <li><a href="#inicio">Início</a></li>
+          <li><a href="#">Início</a></li>
           <li><a href="#sobre">Sobre nós</a></li>
           <li><a href="#projetos">Nossos projetos</a></li>
         </ul>
