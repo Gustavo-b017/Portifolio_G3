@@ -9,12 +9,21 @@ function Main() {
       <div className="cubo_text">
         <h1 className="cubo_title" aria-label="Pensar ao cubo é ir além">
 
+          {/* 1. PENSAR (laranja) */}
           <p>
-            <span className="laranja">PENSAR</span> AO
+            <span className="laranja">PENSAR</span>
           </p>
 
-          <p>CUBO É IR</p>
+          {/* 2. AO */}
+          <p>AO</p>
+          
+          {/* 3. CUBO */}
+          <p>CUBO</p>
 
+          {/* 4. É IR */}
+          <p>É IR</p>
+
+          {/* 5. ALÉM (azul) */}
           <p className="azul">ALÉM</p>
         </h1>
 

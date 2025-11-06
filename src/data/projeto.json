@@ -3,7 +3,7 @@
     "id": "peca-certa",
     "title": "PEÇA CERTA",
     "alt": "Thumbnail do projeto Peça Certa",
-    "foto": "/public/imgs/ancora.svg",
+    "foto": "/public/imgs/banner_ancora.png",
     "desc": "Marketplace inteligente para autopeças, com busca por compatibilidade, catálogo unificado e checkout seguro. O back-end expõe APIs de catálogo, carrinho e pagamento; no front-end, a UI prioriza velocidade e clareza para oficinas e consumidores.",
     "links": {
       "demo": "https://algo-front-kohl.vercel.app/",
@@ -16,7 +16,7 @@
     "id": "BlueVision",
     "title": "Blue Vision",
     "alt": "Logotipo da Blue Vision",
-    "foto": "/public/imgs/blueVision.svg",
+    "foto": "/public/imgs/banner_blue.png",
     "desc": "",
     "links": {
       "demo": "https://global-o20-2024.vercel.app/",
@@ -29,7 +29,7 @@
     "id": "Sijia",
     "title": "SIJIA",
     "alt": "Logotipo da Sijia",
-    "foto": "/public/imgs/sijia.png",
+    "foto": "/public/imgs/banner_sijia.png",
     "desc": "",
     "links": {
       "demo": "https://sijia-two.vercel.app/",
@@ -42,7 +42,7 @@
     "id": "tekoa",
     "title": "TEKOÁ",
     "alt": "Logotipo do TEKOÁ",
-    "foto": "/public/imgs/tekoa.svg",
+    "foto": "/public/imgs/banner_tekoa.png",
     "desc": "O Tekoá é uma plataforma digital que integra tecnologia e preservação ambiental. Desenvolvida para otimizar o resgate e reabilitação de animais afetados por queimadas, conecta voluntários, brigadistas e centros de atendimento. Com API em Java, algoritmos em Python e banco Oracle, o sistema prioriza ocorrências, traça rotas e garante eficiência no cuidado e reintrodução da fauna silvestre.",
     "links": {
       "demo": "https://youtu.be/ScF981rHeic",
