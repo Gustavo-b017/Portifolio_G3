@@ -4,10 +4,12 @@
   from {
     transform: rotateY(0deg); // Equivalente a rotateZ(0deg) em 2D
   }
+
   to {
     transform: rotateY(360deg); // Equivalente a rotateZ(360deg) em 2D
   }
 }
+
 .cubo {
   position: relative;
   max-width: 100vw;
@@ -69,35 +71,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
   }
 
   .cubo_text {
     max-width: 50%;
 
     .cubo_title {
-      
-      p { 
-        font-size: 6rem;
-        display: inline-block; 
-        margin: 0; 
-        margin-right: 15px; 
-      }
-      
-     
 
+      margin-top: 50px;
+
+      p {
+        font-size: 6rem;
+        display: inline-block;
+        margin: 0;
+        margin-right: 15px;
+      }
+    }
+
+    .cubo_lead {
+      font-size: var(--texto-dsk);
+      line-height: 1.5;
     }
   }
 
   .cubo_art {
     position: relative;
     transform: translate(0, 0);
-    max-width: 50%;
+    width: 50%;
+    left: 120px;
     z-index: 0;
 
     img {
       opacity: 1;
-      max-height: 600px;
+      height: 100%;
     }
   }
 
