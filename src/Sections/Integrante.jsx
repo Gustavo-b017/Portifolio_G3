@@ -16,7 +16,7 @@ const fix = (p = "") => {
 function Integrante() {
   return (
     <section id="sobre">
-      <h2 className="team_title">SOBRE NÓS</h2>
+      <h2 className="section_title">SOBRE NÓS</h2>
 
       <ul className="team-flex">
         {team.map((m) => (
@@ -31,9 +31,9 @@ function Integrante() {
               <span className="member_role"> {m.func}</span>
             </h3>
 
-            <p className="member_bio">{m.bio}</p>
+            <p className="textos">{m.bio}</p>
 
-            <div className="member_socials" aria-label={`Redes de ${m.nome}`}>
+            <div className="links_icons" aria-label={`Redes de ${m.nome}`}>
               {m.socials?.linkedin && (
                 <a href={m.socials.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} alt="LinkedIn" />

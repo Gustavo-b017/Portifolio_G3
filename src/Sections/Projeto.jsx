@@ -13,7 +13,7 @@ const fix = (p = "") => {
 function Projeto() {
   return (
     <section id="projetos">
-      <h2 className="proj_title">NOSSOS PROJETOS</h2>
+      <h2 className="section_title">PROJETOS</h2>
 
       <ul className="proj-flex">
         {projects.map((p) => (
@@ -25,9 +25,9 @@ function Projeto() {
 
             <h3 className="proj_name">{p.title}</h3>
 
-            <p className="proj_bio">{p.desc}</p>
+            <p className="textos">{p.desc}</p>
 
-            <div className="proj_socials" aria-label={`Redes de ${p.nome}`}>
+            <div className="links_icons" aria-label={`Redes de ${p.nome}`}>
               {p.links?.demo && (
                 <a href={p.links.demo} aria-label="Demo" target="_blank" rel="noopener noreferrer">
                   {/* ⬇️ normaliza o ícone da demo, caso venha do JSON */}

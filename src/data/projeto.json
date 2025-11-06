@@ -1,7 +1,7 @@
 [
   {
     "id": "peca-certa",
-    "title": "PEÇA CERTA",
+    "title": "Peça Certa",
     "alt": "Thumbnail do projeto Peça Certa",
     "foto": "/public/imgs/banner_ancora.png",
     "desc": "Marketplace inteligente para autopeças, com busca por compatibilidade, catálogo unificado e checkout seguro. O back-end expõe APIs de catálogo, carrinho e pagamento; no front-end, a UI prioriza velocidade e clareza para oficinas e consumidores.",
@@ -17,7 +17,7 @@
     "title": "Blue Vision",
     "alt": "Logotipo da Blue Vision",
     "foto": "/public/imgs/banner_blue.png",
-    "desc": "",
+    "desc": "Este projeto combate a desinformação sobre a saúde dos oceanos e a instabilidade da Corrente do Golfo (AMOC) usando uma abordagem dupla: um website educativo com dados interativos e um dispositivo de monitoramento físico com Arduino para coleta de dados marinhos em tempo real. A solução integrada visa aumentar a conscientização pública e capacitar ações de combate às mudanças climáticas e de conservação marinha.",
     "links": {
       "demo": "https://global-o20-2024.vercel.app/",
       "demo_img": "/public/imgs/blueVision.svg",
@@ -27,10 +27,10 @@
   },
   {
     "id": "Sijia",
-    "title": "SIJIA",
+    "title": "Sijia",
     "alt": "Logotipo da Sijia",
     "foto": "/public/imgs/banner_sijia.png",
-    "desc": "",
+    "desc": "Sijia é uma plataforma educativa e interativa para pacientes pediátricos do Instituto da Criança e Adolescente, que utiliza vídeos curtos e jogos (quiz, memória) para explicar procedimentos médicos. O objetivo é informar, entreter e testar o conhecimento de crianças e acompanhantes sobre os exames, melhorando sua experiência hospitalar.",
     "links": {
       "demo": "https://sijia-two.vercel.app/",
       "demo_img": "/public/imgs/sijia.png",
@@ -40,7 +40,7 @@
   },
   {
     "id": "tekoa",
-    "title": "TEKOÁ",
+    "title": "Tekoá",
     "alt": "Logotipo do TEKOÁ",
     "foto": "/public/imgs/banner_tekoa.png",
     "desc": "O Tekoá é uma plataforma digital que integra tecnologia e preservação ambiental. Desenvolvida para otimizar o resgate e reabilitação de animais afetados por queimadas, conecta voluntários, brigadistas e centros de atendimento. Com API em Java, algoritmos em Python e banco Oracle, o sistema prioriza ocorrências, traça rotas e garante eficiência no cuidado e reintrodução da fauna silvestre.",

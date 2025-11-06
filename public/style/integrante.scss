@@ -4,14 +4,6 @@
   padding: 70px 0 150px 0;
 }
 
-
-.team_title {
-  text-align: center;
-  margin: 40px 0 100px 0;
-  font-size: var(--titulo);
-  color: var(--laranja);
-}
-
 .team-flex {
   display: flex;
   justify-content: space-between;
@@ -42,74 +34,13 @@
 
     }
 
-    .member_name {
-      font-size: 1.7rem;
-      margin: 15px 0;
-      color: var(--laranja);
-    }
-
-    .member_bio {
-      text-align: center;
-      font-size: var(--texto);
-      font-weight: 100;
-      padding: 0 10px;
-      letter-spacing: 1.2px;
-      line-height: 25px;
-    }
-
-    .member_socials {
-      display: flex;
-      gap: 20px;
-      margin: 20px auto;
-
-      a {
-        transition: all 0.3s ease-in-out;
-
-        img {
-          border-radius: 10px;
-          width: 35px;
-          height: auto;
-        }
-
-        &:hover img {
-          transform: scale(1.05);
-          box-shadow: 0 0 20px 5px rgba(255, 112, 67, 0.3);
-        }
-      }
-
-    }
-
-
   }
 }
 
 @media (max-width: 768px) {
 
-  @keyframes fade-slide-up {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   #sobre {
     padding: 70px 0 70px 0;
-  }
-
-
-  .team_title {
-    text-align: center;
-    margin: 0px 0px 60px 0;
-    font-size: var(--titulo-mob);
-    color: var(--laranja);
-
-    opacity: 0;
-    animation: fade-slide-up 0.8s ease-out 0.2s forwards;
   }
 
   .team-flex {
@@ -121,25 +52,6 @@
       .member_foto img {
         width: 160px;
         height: 160px;
-      }
-
-      .member_name {
-        font-size: var(--titulo-member);
-        margin: 15px 0;
-      }
-
-      .member_bio {
-        padding: 0;
-        letter-spacing: 1px;
-      }
-
-      .member_socials {
-        gap: 10px;
-
-        a img {
-          border-radius: 8px;
-          width: 30px;
-        }
       }
 
     }
