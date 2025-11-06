@@ -1,3 +1,4 @@
+import { useState } from 'react'; // 1. Importar o useState
 import projects from "../data/projeto.json";
 import "/public/style/projeto.scss";
 
@@ -10,39 +11,61 @@ const fix = (p = "") => {
   return out;
 };
 
+
+function ProjetoCard({ project }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Só mostra o botão "Saiba Mais" se a descrição for longa
+  const hasLongDesc = project.desc && project.desc.length > 100; // Limite de 100 caracteres
+
+  const wrapperClasses = [
+    'proj_bio_wrapper',
+    isExpanded ? 'expanded' : '',
+    hasLongDesc ? 'long-desc' : '' // Classe para o CSS aplicar o "fade"
+  ].join(' ');
+
+  return (
+    <li key={project.id} className="proj">
+      <div className="proj_foto">
+        <img src={fix(project.foto)} alt={project.alt} loading="lazy" />
+      </div>
+
+      <h3 className="proj_name">{project.title}</h3>
+
+      <div 
+        className={wrapperClasses}
+        onClick={() => hasLongDesc && setIsExpanded(!isExpanded)} // Só é clicável se a descrição for longa
+      >
+        <p className="textos">{project.desc}</p>
+      </div>
+
+      <div className="links_icons" aria-label={`Redes de ${project.nome}`}>
+        {project.links?.demo && (
+          <a href={project.links.demo} aria-label="Demo" target="_blank" rel="noopener noreferrer">
+            <img src={fix(project.links.demo_img)} alt="Demo" />
+          </a>
+        )}
+        
+        {project.links?.github && (
+          <a href={project.links.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <img src={fix(project.links.github_img)} alt="GitHub" />
+          </a>
+        )}
+      </div>
+    </li>
+  );
+}
+
+
 function Projeto() {
   return (
     <section id="projetos">
-      <h2 className="section_title">PROJETOS</h2>
+      <h2 className="proj_title">PROJETOS</h2>
 
       <ul className="proj-flex">
+        {/* 5. Mapeia os projetos para o novo componente ProjetoCard */}
         {projects.map((p) => (
-          <li key={p.id} className="proj">
-            <div className="proj_foto">
-              {/* ⬇️ normaliza a imagem do card */}
-              <img src={fix(p.foto)} alt={p.alt} loading="lazy" />
-            </div>
-
-            <h3 className="proj_name">{p.title}</h3>
-
-            <p className="textos">{p.desc}</p>
-
-            <div className="links_icons" aria-label={`Redes de ${p.nome}`}>
-              {p.links?.demo && (
-                <a href={p.links.demo} aria-label="Demo" target="_blank" rel="noopener noreferrer">
-                  {/* ⬇️ normaliza o ícone da demo, caso venha do JSON */}
-                  <img src={fix(p.links.demo_img)} alt="Demo" />
-                </a>
-              )}
-              
-              {p.links?.github && (
-                <a href={p.links.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                  {/* ⬇️ normaliza o ícone do GitHub, caso venha do JSON */}
-                  <img src={fix(p.links.github_img)} alt="GitHub" />
-                </a>
-              )}
-            </div>
-          </li>
+          <ProjetoCard project={p} key={p.id} />
         ))}
       </ul>
     </section>

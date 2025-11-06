@@ -12,7 +12,7 @@ function App() {
       <Main />
       <Integrante />
       <Projeto />
-    </body>
+      </body>
   )
 }
 
