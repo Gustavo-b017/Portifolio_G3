@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": { "node": "20.x" },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,7 +12,6 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "node": "^25.1.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "sass": "^1.93.3",
